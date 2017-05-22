@@ -1,0 +1,19 @@
+.issue-type {
+    display: flex;
+    justify-content: center;
+}
+
+.issue-type li {
+    margin: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.issue-type label {
+    margin: 10px;
+    font-weight: bold;
+}
+
+.err {
+    color: red;
+}
