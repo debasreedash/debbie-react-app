@@ -1,3 +1,5 @@
 node_modules
 dist
 .idea
+debbie-react-app.iml
+npm-debug.log
