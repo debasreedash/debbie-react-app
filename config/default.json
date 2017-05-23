@@ -1,4 +1,0 @@
-{
-  "apiServer": "http://localhost:8082",
-  "types": ["bug", "story", "task"]
-}

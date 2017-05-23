@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"webpack-dev-server --open\" \"nodemon --watch server server/index\""
+    "start": "concurrently \"webpack-dev-server --open\" \"nodemon --watch server server/index\"",
+    "build": "NODE_ENV='production' webpack -p",
+    "jirarox": "concurrently \"webpack-dev-server --open\"  \"node server/index\""
   },
   "proxy": "http://localhost:4000",
   "babel": {
@@ -19,7 +21,7 @@
   "dependencies": {
     "axios": "^0.16.1",
     "bluebird": "^3.5.0",
-    "query-string": "^4.3.4",
+    "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router-dom": "^4.1.1"
