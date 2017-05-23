@@ -11,7 +11,7 @@ app.use(function(req, res, next) {
 
 var issueRoute = require('./routes/issue.route');
 app.get("/issuetypes/:type", (req, res) => {
-    var issues = issueRoute.getIssueTypes(req.params.type);
+    var issues = issueRoute.getIssuesForType(req.params.type);
     res.send(issues);
 });
 

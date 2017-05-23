@@ -1,5 +1,5 @@
 /**
- * Created by Debasree Dash
+ * @author Debasree Dash
  */
 
 import React from 'react';

@@ -1,5 +1,5 @@
 /**
- * Created by Debasree Dash
+ * @author Debasree Dash
  */
 
 import React, {Component} from 'react';
@@ -12,6 +12,10 @@ var common = require('../../utils/common');
 
 'use strict';
 
+/**
+ * Component: Home
+ * Contains the default (in-memory dataStore) and also a component for external apis
+ */
 class Home extends Component {
 
     constructor(props) {
@@ -21,7 +25,8 @@ class Home extends Component {
         };
         this.types = config.types || ['Bug', 'Story', 'Task'];
         this.api =  apiServer(config.serverUrl || 'http://localhost:4000');
-        common.processEstimates(this.api, this.types)
+
+        common.processEstimates(this.api, this.types) //call the common function to retrieve estimates, given api root & type
             .then(counts => {
                 this.setState(function() {
                     return {
@@ -39,6 +44,10 @@ class Home extends Component {
             });
     }
 
+    /**
+     * Sets the estimates retrieve to a count object (used to display)
+     * @param estimates
+     */
     updateEstimates(estimates) {
         this.setState(function() {
             return {
@@ -48,6 +57,9 @@ class Home extends Component {
         });
     }
 
+    /**
+     * Invoked when incorrect inputs are provided
+     */
     showErr() {
         this.setState(function() {
             return {

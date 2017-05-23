@@ -1,5 +1,5 @@
 /**
- * Created by Debasree Dash.
+ * @author Debasree Dash.
  */
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
