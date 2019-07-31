@@ -32,16 +32,3 @@ Assumptions:
 2) External APIs are returning formatted json
 3) Any invalid issue types given will default to an
 estimate of 0.
-
-I enjoyed learning React to complete this assignment. The
-React components were fairly simple and with
-Angular experience it was easy to transition to this 
-framework.
-
-I followed some guides for proper coding styles and 
-best practices the best of my abilities.
-
-Thank you for the interview exercise as I learned React
-fundamentals and now can create a React App!
-
-Debbie
